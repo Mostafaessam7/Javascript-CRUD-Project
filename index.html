@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container py-5" id="form">
+            <div class="form-group">
+                <label for="productNameInput">Product Name :</label>
+                <input class="form-control" type="text" id="productNameInput">
+            </div>
+            <div class="form-group">
+                <label for="productPriceInput">Product Price :</label>
+                <input class="form-control" type="number" id="productPriceInput">
+            </div>
+            <div class="form-group">
+                <label for="productCategoryInput">Product Category :</label>
+                <input class="form-control" type="text" id="productCategoryInput">
+            </div>
+            <div class="form-group">
+                <label for="productDescInput">Product Description :</label>
+                <textarea class="form-control" type="text" id="productDescInput"></textarea>
+            </div>
+
+
+            <button onclick="addProduct();" id="add"  class="btn btn-outline-info">Add Product</button>
+            <div id="newButton"></div>
+ 
+    </div>
+
+    <div>
+        <input onkeyup="searchProduct(this.value)" placeholder="Search for Product" class="form-control w-25 search" type="text" name="" id="">
+    </div>
+
+    <table class="table w-75 m-auto">
+        <thead>
+            <th>Index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
